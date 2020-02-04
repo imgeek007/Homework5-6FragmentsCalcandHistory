@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorDarkTheme"
+    tools:context=".ButtonsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+//result textview
+    <LinearLayout
+        android:id="@+id/text_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+
+            android:id="@+id/result_txt_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    //clear and change to history buttons
+    <LinearLayout
+        android:id="@+id/clear_wrong"
+        app:layout_constraintTop_toBottomOf="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            android:background="@color/colorBrightGrey"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/percent"
+            android:background="@color/colorBrightGrey"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/history_button"
+            android:background="@color/colorBrightGrey"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="h" />
+
+        <Button
+            android:background="@color/colorOrange"
+            android:id="@+id/divide"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="∻" />
+
+    </LinearLayout>
+
+
+    //top bottoms
+
+    <LinearLayout
+        android:id="@+id/top_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/clear_wrong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04">
+
+
+        <Button
+            android:id="@+id/seven"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/eight"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nine"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9" />
+
+        <Button
+            android:background="@color/colorOrange"
+            android:id="@+id/btn_multiply"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="*" />
+
+
+    </LinearLayout>
+
+
+    //midle buttons
+
+    <LinearLayout
+        android:id="@+id/midle_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/top_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04">
+
+        <Button
+            android:id="@+id/four"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <Button
+
+            android:id="@+id/six"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/minus"
+            android:background="@color/colorOrange"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-" />
+    </LinearLayout>
+
+    //bottom buttons
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/midle_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04">
+
+        <Button
+            android:id="@+id/one"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3" />
+
+
+        <Button
+            android:id="@+id/plus"
+            android:background="@color/colorOrange"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+" />
+    </LinearLayout>
+
+    //other buttons
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04">
+
+
+
+    <Button
+        android:id="@+id/zero"
+        android:background="@color/colorDarkGrey"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01"
+        android:text="0" />
+
+        <Button
+            android:id="@+id/dot"
+            android:background="@color/colorDarkGrey"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:text="," />
+
+    <Button
+        android:id="@+id/equal"
+        android:background="@color/colorOrange"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01"
+        android:text="=" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
